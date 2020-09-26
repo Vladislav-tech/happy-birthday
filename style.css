@@ -3,10 +3,10 @@ body {
     background: #090d00; 
     color: rgba(255, 255, 255, 0.589); 
     text-align: center; 
-    margin: 0 
+    margin: 0;
 }
 
-.main_part {
+.congrulations {
 	text-transform: uppercase;
 	letter-spacing: .5em;
     display: inline-block;
@@ -14,53 +14,49 @@ body {
 	border-width: 4px 0;
 	padding: 1.5em 0em;
 	width: 40em;
-	margin-top: 10%;
-  
+	margin-top: 5%;
 
 }
 
-.flex {
+.congrulations__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main {
+.congrulations__happy-birthday {
   	font: 700 4em/1 "Oswald", sans-serif;
   	letter-spacing: 0;
   	padding: .25em 0 .325em;
 	display: block;
 	margin: 0 auto;
   	text-shadow: 0 0 80px rgba(255,255,255,.5);
-/* Clip Background Image */
 	  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
 	  -webkit-background-clip: text;
 	  background-clip: text;
-/* Animate Background Image */
 	  -webkit-text-fill-color: transparent;
 	  -webkit-animation: aitf 80s linear infinite;
-/* Activate hardware acceleration for smoother animations */
 	  -webkit-transform: translate3d(0,0,0);
 	  -webkit-backface-visibility: hidden;
   }
-/* Animate Background Image */
 
 @-webkit-keyframes aitf {
 	0% { background-position: 0% 50%; }
 	100% { background-position: 100% 50%; }
 }
 
-.low {
-    margin-top: 15px;
+.congrulationsWords {
+	margin-top: 15px;
+	margin-bottom: 15px;
     margin: 0 auto;
     width: 480px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 3px double rgb(78, 78, 78);
     font-size: 16px;
 }
 
 .number,
 .days {
-    color: rgb(255, 153, 0);
+	color: rgb(255, 153, 0);	
 }
 
 img {
@@ -68,9 +64,62 @@ img {
 }
 
 .date {
-    border-bottom: 1px dashed rgba(255,255,255,.25);
+	border-bottom: 1px dashed rgba(255,255,255,.25);
 }
 
 .emoji {
     color: white;
 }
+
+.fireworks {
+	width: 120px;
+	height: 40px;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: #34f3f3e8;
+	color: rgb(203, 255, 244);
+	text-shadow: 1px 1px 0px black;
+	border: 1px solid rgb(109, 109, 109);
+	margin: 15px 0;
+	border-radius: 10%;
+}
+
+.fireworks:hover {
+	background-color: #00c2c2e8;
+	border-radius: 20%;
+}
+
+@media (max-width: 375px) {
+	.congrulations {
+		font-size: 12px;
+		margin-left: 2%;
+	}
+
+	.congrulationsWords {
+		margin-left: 3px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 481px) {
+	.congrulations {
+		width: 100%;
+		margin-left: 12%;
+	}
+
+	.fireworks {
+		margin-left: 12%;
+	}
+}
+
+canvas {
+	overflow-x: hidden;
+	width: 100%;
+	height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+/*Если ты это читаешь, то ты полез в код. Поэтому поздравляю ещё раз с тебя!
+P.S: да, этот код не слишком хорош, но я старался.
+*/
