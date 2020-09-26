@@ -1,7 +1,6 @@
 let button = document.querySelector(".fireworks");
 
 button.onclick = () => {
-	alert(1);
 	let W = window.innerWidth;
 let H = window.innerHeight;
 const canvas = document.getElementById("canvas");
